@@ -115,10 +115,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0c] text-white flex select-none">
+    <div className="min-h-screen  bg-[#0a0a0c] text-white flex select-none">
       
       {/* Sidebar */}
-      <aside className="w-64 bg-[#0d0d12] border-r border-neutral-900 flex flex-col justify-between p-6 fixed inset-y-0 z-30">
+      <aside className="w-64 mt-20 bg-[#0d0d12] border-r border-neutral-900 flex flex-col justify-between p-6 fixed inset-y-0 z-30">
         <div className="space-y-6">
           {/* Logo / Title */}
           <Link href="/" className="flex items-center gap-2 group">
