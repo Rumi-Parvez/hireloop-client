@@ -20,16 +20,42 @@ export const auth = betterAuth({
   },
 
   user: {
-    additionalFields: {
-      role: {
-        type: "string",
-        required: false,
-        defaultValue: "jobSeeker",
-        input: true,
-      },
+  additionalFields: {
+    role: {
+      type: "string",
+      required: false,
+      defaultValue: "jobSeeker",
+    },
+
+    hasPaid: {
+      type: "boolean",
+      required: false,
+      defaultValue: false,
+      input: false,
+    },
+
+    isPremium: {
+      type: "boolean",
+      required: false,
+      defaultValue: false,
+      input: false,
+    },
+
+    plan: {
+      type: "string",
+      required: false,
+      defaultValue: "free",
+      input: false,
+    },
+
+    paymentStatus: {
+      type: "string",
+      required: false,
+      defaultValue: "unpaid",
+      input: false,
     },
   },
-
+},
   databaseHooks: {
     user: {
       create: {

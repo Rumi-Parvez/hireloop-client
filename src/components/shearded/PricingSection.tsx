@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Crown, Zap, Flame, Check, ArrowRight } from 'lucide-react';
 
 export default function PricingSection() {
@@ -91,10 +92,12 @@ export default function PricingSection() {
             </ul>
           </div>
 
+          <Link href="/checkout">
           <button className="w-full py-3.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium text-sm rounded-xl transition-all flex items-center justify-center gap-2 group">
             Choose This Plan
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
           </button>
+          </Link>
         </div>
 
         {/* Growth Plan ($17) - Highlighted */}
@@ -142,10 +145,12 @@ export default function PricingSection() {
             </ul>
           </div>
 
+          <Link href="/checkout">
           <button className="w-full py-3.5 bg-white hover:bg-neutral-200 text-neutral-950 font-semibold text-sm rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-white/10 group">
             Choose This Plan
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
           </button>
+          </Link>
         </div>
 
         {/* Premium Plan ($99) */}
@@ -187,10 +192,12 @@ export default function PricingSection() {
             </ul>
           </div>
 
+          <Link href="/checkout">
           <button className="w-full py-3.5 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white font-medium text-sm rounded-xl transition-all flex items-center justify-center gap-2 group">
             Choose This Plan
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
           </button>
+          </Link>
         </div>
 
       </div>
